@@ -14,6 +14,12 @@ rasa(jamnik).
 rasa(pudel).
 rasa(bernardyn).
 rasa(buldog).
+rasa(dalmatynczyk).
+rasa(maltanczyk).
+rasa(husky).
+rasa('chart afganski').
+rasa('szpic miniaturowy').
+rasa(wyzel).
 
 jest(jamnik, maly).
 jest(jamnik, charakterny).
@@ -26,10 +32,44 @@ jest(bernardyn, olbrzymi).
 jest(bernardyn, lagodny).
 jest(bernardyn, pasterski).
 
+jest(buldog, sredni).
+jest(buldog, uzytkowy).
+jest(buldog, lagodny).
+
+jest(dalmatynczyk, duzy).
+jest(dalmatynczyk, uzytkowy).
+jest(dalmatynczyk, towarzyski).
+
+jest(maltanczyk, maly).
+jest(maltanczyk, towarzyski).
+
+jest(husky, duzy).
+jest(husky, towarzyski).
+
+jest('chart afganski', duzy).
+jest('chart afganski', towarzyski).
+jest('chart afganski', charakterny).
+
+jest('szpic miniaturowy', maly).
+jest('szpic miniaturowy', charakterny).
+jest('szpic miniaturowy', towarzyski).
+
+jest(wyzel, sredni).
+jest(wyzel, tropiacy).
+jest(wyzel, towarzyski).
+
+
 ma(jamnik, 'krotka siersc').
 ma(jamnik, 'krotkie lapy').
 ma(pudel, 'krecona siersc').
 ma(bernardyn, 'dluga siersc').
+ma(buldog, 'krotka siersc').
+ma(dalmatynczyk, 'krotka siersc').
+ma(maltanczyk, 'dluga siersc').
+ma(husky, 'krotka siersc').
+ma('chart afganski', 'dluga siersc').
+ma('szpic miniaturowy', 'dluga siersc').
+ma(wyzel, 'krotka siersc').
 
 wypiszRozwiazanie(L) :- L=[], write('Brak rozwiazan - kup sobie rybki'), nl.
 wypiszRozwiazanie(L) :- length(L, Len), Len = 1, [El|_] = L, write('Moja propozycja to '), print(El), nl.
